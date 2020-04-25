@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2979df5-3834-47ba-ae17-a723bab9638f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da711ea7-bf83-440c-a2b5-53b8b22dff71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da711ea7-bf83-440c-a2b5-53b8b22dff71.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/specialist_finder_back/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/specialist_finder_back/specialist_finder_back/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/specialist_finder_back/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +29,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3 [1]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3 [1]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [1]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -79,7 +88,7 @@
       <updated>1587800745498</updated>
       <workItem from="1587800803345" duration="2351000" />
       <workItem from="1587808385375" duration="2377000" />
-      <workItem from="1587810926890" duration="6958000" />
+      <workItem from="1587810926890" duration="10522000" />
     </task>
     <servers />
   </component>
@@ -87,10 +96,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587811127770">
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587819442694">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587811127770" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587819442694" />
     <state x="443" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587801875452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -99,6 +108,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587812166517" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1587819447850">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1587819447850" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1587802825623">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

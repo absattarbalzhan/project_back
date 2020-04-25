@@ -63,8 +63,8 @@ def get_object(specialist_id):
         return Response({'error': str(e)})
 
 
-def get(request, recipe_id):
-    specialist = get_object(recipe_id)
+def get(request, specialist_id):
+    specialist = get_object(specialist_id)
     serializer = SpecialistSerializer(specialist)
     return Response(serializer.data)
 
@@ -79,9 +79,9 @@ class SpecialistDetailAPIView(APIView):
             return Response(serializer.data)
         return Response({'errors': serializer.errors})
 
-    def delete(self, request, recipe_id):
-        recipe = get_object(recipe_id)
-        recipe.delete()
+    def delete(self, request, specialist_id):
+        specialist = get_object(specialist_id)
+        specialist.delete()
 
         return Response({'deleted': True})
 

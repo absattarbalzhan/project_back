@@ -20,5 +20,5 @@ class CategorySerializer(serializers.Serializer):
 class SpecialistSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialist
-        fields = ['id', 'title', 'description',  'likes', 'front_image', 'first_image',
+        fields = ['id', 'title', 'age', 'gender', 'city', 'likes', 'comments', 'front_image', 'first_image',
                   'second_image', 'third_image', 'category']
