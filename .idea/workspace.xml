@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2979df5-3834-47ba-ae17-a723bab9638f" name="Default Changelist" comment="" />
+    <list default="true" id="f2979df5-3834-47ba-ae17-a723bab9638f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/specialist_finder_back/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/specialist_finder_back/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,19 +33,6 @@
         <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="api_specialist: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -51,7 +43,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Пользователь\Desktop\Specialist_finder_back\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1b1XoBzpUO8wpXC0kRzJTqVWWs9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -76,7 +79,7 @@
       <updated>1587800745498</updated>
       <workItem from="1587800803345" duration="2351000" />
       <workItem from="1587808385375" duration="2377000" />
-      <workItem from="1587810926890" duration="3137000" />
+      <workItem from="1587810926890" duration="6958000" />
     </task>
     <servers />
   </component>

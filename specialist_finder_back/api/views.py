@@ -56,20 +56,23 @@ class SpecialistListAPIView(APIView):
         return Response({'error': serializer.errors}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-class SpecialistDetailAPIView(APIView):
-    def get_object(self, specialist_id):
-        try:
-            return Specialist.objects.get(id=specialist_id)
-        except Specialist.DoesNotExist as e:
-            return Response({'error': str(e)})
+def get_object(specialist_id):
+    try:
+        return Specialist.objects.get(id=specialist_id)
+    except Specialist.DoesNotExist as e:
+        return Response({'error': str(e)})
 
-    def get(self, request, recipe_id):
-        specialist = self.get_object(recipe_id)
-        serializer = SpecialistSerializer(specialist)
-        return Response(serializer.data)
+
+def get(request, recipe_id):
+    specialist = get_object(recipe_id)
+    serializer = SpecialistSerializer(specialist)
+    return Response(serializer.data)
+
+
+class SpecialistDetailAPIView(APIView):
 
     def put(self, request, specialist_id):
-        specialist = self.get_object(specialist_id_id)
+        specialist = get_object(specialist_id)
         serializer = SpecialistSerializer(instance=specialist, data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -77,7 +80,7 @@ class SpecialistDetailAPIView(APIView):
         return Response({'errors': serializer.errors})
 
     def delete(self, request, recipe_id):
-        recipe = self.get_object(recipe_id)
+        recipe = get_object(recipe_id)
         recipe.delete()
 
         return Response({'deleted': True})
