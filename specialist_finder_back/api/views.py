@@ -70,6 +70,16 @@ def get(request, specialist_id):
 
 
 class SpecialistDetailAPIView(APIView):
+    def get_object(self, specialist_id):
+        try:
+            return Specialist.objects.get(id=specialist_id)
+        except Specialist.DoesNotExist as e:
+            return Response({'error': str(e)})
+
+    def get(self, request, specialist_id):
+        specialist = self.get_object(specialist_id)
+        serializer = SpecialistSerializer(specialist)
+        return Response(serializer.data)
 
     def put(self, request, specialist_id):
         specialist = get_object(specialist_id)
