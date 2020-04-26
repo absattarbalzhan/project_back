@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f2979df5-3834-47ba-ae17-a723bab9638f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/da711ea7-bf83-440c-a2b5-53b8b22dff71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da711ea7-bf83-440c-a2b5-53b8b22dff71.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9718018-f5b2-4d5a-ae23-aca732b3ead7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specialist_finder_back/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specialist_finder_back/specialist_finder_back/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/specialist_finder_back/specialist_finder_back/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,13 @@
         <item name="db.sqlite3 [1]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [1]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="api_comment: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -88,6 +98,8 @@
       <workItem from="1587808385375" duration="2377000" />
       <workItem from="1587810926890" duration="11087000" />
       <workItem from="1587901291831" duration="2526000" />
+      <workItem from="1587904007186" duration="144000" />
+      <workItem from="1587904503113" duration="9397000" />
     </task>
     <servers />
   </component>
@@ -111,13 +123,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1587819447850" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1587802825623">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1587910203973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587802825623" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587901290195">
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587910203973" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587904502942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587901290194" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587904502942" />
   </component>
 </project>

@@ -1,11 +1,17 @@
-from rest_framework import status
+from django.http import JsonResponse, HttpResponse
+from django.shortcuts import get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
+from django.views.generic import ListView
+from rest_framework import status, generics, filters
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.utils import json
 from rest_framework.views import APIView
+from django_filters.rest_framework import DjangoFilterBackend
 
-from .models import Category, Specialist
-from .serializers import CategorySerializer, SpecialistSerializer
+from .models import Category, Specialist, Comment
+from .serializers import CategorySerializer, SpecialistSerializer, CommentSerializer
 
 
 @api_view(['GET', 'POST'])
@@ -108,3 +114,31 @@ class TopTenSpecialistsAPIView(APIView):
         top_ten = Specialist.objects.order_by('likes')[:10]
         serializer = SpecialistSerializer(top_ten, many=True)
         return Response(serializer.data)
+
+
+# def register(request):
+#     if request.method == 'POST':
+#         data = json.loads(request.body)
+#         serializer = MyUserSerializer(data=data)
+#
+#         if serializer.is_valid():
+#             serializer.save()
+#             return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)
+#
+#         return JsonResponse(serializer.errors, status.HTTP_400_BAD_REQUEST)
+#
+#     return HttpResponse(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+
+
+class CommentsBySpecialistAPIView(generics.ListAPIView):
+    def get_queryset(self):
+        return Comment.objects.filter(specialist=self.kwargs.get('id'))
+
+    serializer_class = CommentSerializer
+
+
+class SpecialistSearchAPIView(generics.ListCreateAPIView):
+    search_fields = ['title']
+    filter_backends = (filters.SearchFilter,)
+    queryset = Specialist.objects.all()
+    serializer_class = SpecialistSerializer

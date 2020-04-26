@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Category, Specialist
+from .models import Category, Specialist, Comment
 
 
 class CategorySerializer(serializers.Serializer):
@@ -22,3 +22,11 @@ class SpecialistSerializer(serializers.ModelSerializer):
         model = Specialist
         fields = ['id', 'title', 'age', 'gender', 'city', 'likes', 'comments', 'front_image', 'first_image',
                   'second_image', 'third_image', 'category']
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = ['id', 'title', 'text', 'specialist']
+
+
